@@ -1,14 +1,16 @@
 :root {
-    --header-color: #9BC1BC;
-    --dashboard-color: rgb(208, 122, 111);
-    --content-bg-color: #E6EBE0;
-    --content-card-color: #F4F1BB;
+    --header-color: #f4babb;
+    --dashboard-color: #fec89a;
+    --content-bg-color: #fcd5ce;
+    --content-card-color: #f8edeb;
 }
 
 
 body {
+    padding: 0;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 
@@ -31,9 +33,36 @@ body {
     grid-row: 2/3;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
+.project-wrapper {
+    padding: 30px;
+    display: grid;  /** grid for the project cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+    padding: 15px;
+    margin: 30px;
+
+    height: 200px;
+    background-color: var(--content-card-color);
+}
+
+
 .side-content {
     grid-column: 2/3;
     grid-row: 1/2;
+}
+.announcement {
+    background-color: var(--content-card-color);
+
+}
+.announcement-card {
+    margin: 30px;
+}
+.trending {
+    background-color: var(--content-card-color);
+}
+.other-user-card {
+    margin: 30px;
 }

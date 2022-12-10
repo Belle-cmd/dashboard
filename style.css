@@ -1,0 +1,39 @@
+:root {
+    --header-color: #9BC1BC;
+    --dashboard-color: rgb(208, 122, 111);
+    --content-bg-color: #E6EBE0;
+    --content-card-color: #F4F1BB;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+.header {
+    background-color: var(--header-color);
+    grid-column: 2/4;
+}
+
+
+.dashboard {
+    background-color: var(--dashboard-color);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+.content {
+    background-color: var(--content-bg-color);
+    grid-column: 2/4;  /* Outer grid layout */
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.side-content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}

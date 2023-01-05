@@ -17,6 +17,56 @@ body {
 .header {
     background-color: var(--header-color);
     grid-column: 2/4;
+    padding: 30px;
+}
+.navbar {
+    display: flex;
+
+     /* put search-navbar and user-navbar at far left and far right */
+    justify-content: space-between; 
+}
+.search-navbar {
+    display: flex;
+}
+.search-navbar input[type="search"] {
+    appearance: none;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    width: 50vw;
+    height: 33px;
+}
+.search-navbar button:not(input[type="search"]) {
+    appearance: none;
+    border: none;
+    width: 40px;
+    height: 33px;
+    background-color: #dfd6b8;
+    background-image: url(images/magnify.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 15px 15px 0;
+}
+.search-navbar button:not(input[type="search"]):hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.user-navbar {
+    display: flex;
+    gap: 10px;
+}
+.user-navbar img[src="images/snowball.jpg"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.user-navbar img[src="images/bell-ring.svg"] {
+    width: 23px;
+    height: auto;
+    margin-bottom: 8px;
+}
+.user-navbar img[src="images/bell-ring.svg"]:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 

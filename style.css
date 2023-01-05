@@ -1,7 +1,7 @@
 :root {
-    --header-color: #f4babb;
-    --dashboard-color: #fec89a;
-    --content-bg-color: #fcd5ce;
+    --header-color: #f0e8ca;
+    --dashboard-color: #f5cb71;
+    --content-bg-color: #d3a390;
     --content-card-color: #f8edeb;
 }
 
@@ -28,6 +28,21 @@ body {
 .dashboard img {
     height: auto;
     width: 25px;
+}
+.menu, .dashboard-header {
+    display: flex;
+    padding: 10px 40px;
+}
+.menu > img, .dashboard-header > img {
+    padding-right: 20px;
+}
+.dashboard-header {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.menu:hover {
+    background-color: #d39c55;
+    cursor: pointer;
 }
 
 

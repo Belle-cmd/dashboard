@@ -26,3 +26,7 @@ shield.svg by [Austin Andrews](https://materialdesignicons.com/icon/shield)
 snowball.jpg by [StockSnap](https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2561331) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2561331)
 
 bell-ring.svg by [Google](https://materialdesignicons.com/icon/bell-ring)
+
+star-plus-outline.svg by [Michael Irigoyen](https://materialdesignicons.com/icon/star-plus-outline)
+
+eye-plus-outline.svg by [GreenTurtwig](https://materialdesignicons.com/icon/eye-plus-outline)

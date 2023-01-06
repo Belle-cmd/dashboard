@@ -1,8 +1,7 @@
 :root {
-    --header-color: #f5ebe0;
-    --content-bg-color: #e3d5ca;
-    --content-card-color: #d5bdaf;
-    --button-colors: #b6c197;
+    --main-color: #ffefde;
+    --content-bg-color: #dcc4b4;
+    --button-colors: #d7d7cd;
 }
 
 
@@ -15,10 +14,10 @@ body {
 
 
 .header {
-    background-color: var(--header-color);
+    background-color: var(--main-color);
     grid-column: 2/4;
     padding: 20px 40px 5px 40px;
-    box-shadow: 0px 3px 10px var(--content-card-color);
+    box-shadow: 5px 4px 8px #a38775;
 
     position: relative;
     z-index: 10;  /* specifies the stack order of an element */
@@ -36,8 +35,12 @@ body {
     appearance: none;
     border: none;
     border-radius: 15px 0 0 15px;
+    background-color: var(--content-bg-color);
     width: 50vw;
     height: 33px;
+}
+.search-navbar input[type="search"]:focus {
+    background-color: #f7dfd3;
 }
 .search-navbar button:not(input[type="search"]) {
     appearance: none;
@@ -144,7 +147,7 @@ body {
     padding-bottom: 10px;
 }
 .menu:hover {
-    background-color: #a1a775;
+    background-color: #c8c9bd;
     cursor: pointer;
 }
 
@@ -160,14 +163,31 @@ body {
 .project-wrapper {
     padding: 30px;
     display: grid;  /** grid for the project cards */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .card {
-    padding: 15px;
+    padding: 20px;
     margin: 30px;
 
+    display: flex;
+    flex-direction: column;
     height: 200px;
-    background-color: var(--content-card-color);
+    width: 300px;
+    background-color: var(--main-color);
+    border-left: 10px solid #d58f1e;
+    border-radius: 10px;
+    justify-content: space-between;
+
+}
+.card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.card img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
 }
 
 
@@ -176,14 +196,14 @@ body {
     grid-row: 1/2;
 }
 .announcement {
-    background-color: var(--content-card-color);
+    background-color: var(--main-color);
 
 }
 .announcement-card {
     margin: 30px;
 }
 .trending {
-    background-color: var(--content-card-color);
+    background-color: var(--main-color);
 }
 .other-user-card {
     margin: 30px;

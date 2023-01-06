@@ -1,8 +1,8 @@
 :root {
-    --header-color: #f0e8ca;
-    --dashboard-color: #f5cb71;
-    --content-bg-color: #d3a390;
-    --content-card-color: #f8edeb;
+    --header-color: #f5ebe0;
+    --content-bg-color: #e3d5ca;
+    --content-card-color: #d5bdaf;
+    --button-colors: #b6c197;
 }
 
 
@@ -17,7 +17,11 @@ body {
 .header {
     background-color: var(--header-color);
     grid-column: 2/4;
-    padding: 30px;
+    padding: 30px 60px 5px 60px;
+    box-shadow: 0px 3px 10px var(--content-card-color);
+
+    position: relative;
+    z-index: 10;
 }
 .navbar {
     display: flex;
@@ -40,7 +44,7 @@ body {
     border: none;
     width: 40px;
     height: 33px;
-    background-color: #dfd6b8;
+    background-color: var(--button-colors);
     background-image: url(images/magnify.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -68,10 +72,46 @@ body {
     opacity: 0.5;
     cursor: pointer;
 }
+.user-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    /* Explicitly make profile picture arrange horizontally */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-content: center;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.user-info-wrapper img {
+    /* user profile picture */
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+.usesr-intro {
+    /* Style for the username */
+    display: flex;
+    flex-direction: column;
+}
+.user-info-wrapper button {
+    appearance: none;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: var(--button-colors);
+}
 
 
 .dashboard {
-    background-color: var(--dashboard-color);
+    background-color: var(--button-colors);
     grid-column: 1/2;
     grid-row: 1/3;
 }
@@ -91,7 +131,7 @@ body {
     padding-bottom: 20px;
 }
 .menu:hover {
-    background-color: #d39c55;
+    background-color: #a1a775;
     cursor: pointer;
 }
 

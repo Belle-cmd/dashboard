@@ -17,11 +17,11 @@ body {
 .header {
     background-color: var(--header-color);
     grid-column: 2/4;
-    padding: 30px 60px 5px 60px;
+    padding: 20px 40px 5px 40px;
     box-shadow: 0px 3px 10px var(--content-card-color);
 
     position: relative;
-    z-index: 10;
+    z-index: 10;  /* specifies the stack order of an element */
 }
 .navbar {
     display: flex;
@@ -62,17 +62,20 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    margin-right: 4px;
 }
 .user-navbar img[src="images/bell-ring.svg"] {
     width: 23px;
     height: auto;
     margin-bottom: 8px;
+    margin-right: 4px;
 }
 .user-navbar img[src="images/bell-ring.svg"]:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 .user-info-wrapper {
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -105,7 +108,7 @@ body {
     width: 80px;
     height: 30px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 13px;
     background-color: var(--button-colors);
 }
 
@@ -119,16 +122,26 @@ body {
     height: auto;
     width: 25px;
 }
+.dashboard-header img {
+    height: auto;
+    width: 40px;
+    padding-right: 10px;
+
+}
 .menu, .dashboard-header {
     display: flex;
-    padding: 10px 40px;
+    padding: 0 40px;
 }
-.menu > img, .dashboard-header > img {
-    padding-right: 20px;
+.dashboard > div:nth-last-child(3) {
+    margin-top: 40px;
+}
+.menu > img {
+    /* menu icons */
+    padding-right: 25px;
 }
 .dashboard-header {
     font-size: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .menu:hover {
     background-color: #a1a775;

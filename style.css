@@ -209,6 +209,18 @@ h3 {
 }
 .announcement-card {
     margin: 0 20px;
+    padding: 15px 0;
+}
+.announcement-card:nth-of-type(2) {
+    border-top: 1px solid var(--content-bg-color);
+    border-bottom: 1px solid var(--content-bg-color);
+}
+.announcement-card h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.announcement-card p {
+    margin: 0;
 }
 .trending {
     background-color: var(--main-color);

@@ -3,8 +3,8 @@
 :root {
     --main-color: #f5f3ff;
     --content-bg-color: #e2e8f0;
-    --button-colors: #0369a1;
-    --button-hover-color: #60a5fa;
+    --button-colors: #8bd3c5;
+    --button-hover-color: #8dbbb4;
 }
 
 
@@ -78,6 +78,7 @@ h3 {
     height: 40px;
     border-radius: 100%;
     margin-right: 4px;
+    margin-left: 4px;
     margin-bottom: 1px;
 }
 .user-navbar img[src="images/bell-ring.svg"] {
@@ -137,7 +138,8 @@ h3 {
     border-radius: 15px;
     font-size: 13px;
     background-color: var(--button-colors);
-    color: white;
+    color: black;
+    font-size: 16px;
 }
 .user-info-wrapper button:hover {
     cursor: pointer;
@@ -149,7 +151,7 @@ h3 {
     background-color: var(--button-colors);
     grid-column: 1/2;
     grid-row: 1/3;
-    color: white;
+    color: black;
 }
 .dashboard img {
     height: auto;
@@ -204,6 +206,9 @@ h3 {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
 }
+.card:hover {
+    background-color: #ffffff;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -245,11 +250,14 @@ h3 {
 .announcement {
     background-color: var(--main-color);
     border-radius: 10px;
-    padding: 5px 10px;
 }
 .announcement-card {
-    margin: 0 20px;
-    padding: 15px 0;
+    padding: 20px 25px;
+}
+.announcement-card:hover {
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .announcement-card:nth-of-type(2) {
     border-top: 2px solid var(--content-bg-color);
@@ -258,13 +266,15 @@ h3 {
 .trending {
     background-color: var(--main-color);
     border-radius: 10px;
-    padding: 5px 10px;
 }
 .other-user-card {
     display: flex;
-    margin: 0 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 20px;
+}
+.other-user-card:hover {
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .other-user-card img {
     width: 40px;

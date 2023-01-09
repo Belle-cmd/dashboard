@@ -1,5 +1,20 @@
 # dashboard
-This is a webpage of a mock dashboard created using HTML, CSS, and vanilla Javascript.
+This is a webpage of a mock dashboard created using HTML and CSS.
+This web page project was used to practice advanced grid attributes that enable grid
+children to adjust its sizes based on the size of its container.
+
+Live preview: [link](https://belle-cmd.github.io/dashboard/)
+
+
+## Concepts and skills I applied in this project:
+- Git commit message conventions
+- Other CSS units (vw, vh, fractional units etc.)
+- Google font API
+- Advanced selectors
+- Custom properties
+- Combining grids and flexboxes
+- Autofit attribute with grid-templates
+- Minmax attribute with grid-templates
 
 
 ## Sources
